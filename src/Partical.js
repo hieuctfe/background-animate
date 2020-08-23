@@ -78,8 +78,10 @@ export class Root {
         this.ctx.fill();
         this.ctx.stroke();
       }
+      requestAnimationFrame(this.draw.bind(this));
+    } else {
+      cancelAnimationFrame(this.draw);
     }
-    requestAnimationFrame(this.draw.bind(this));
   }
   caculateNextFrame() {
     this.speedX += (Math.random() - 0.5) / 2;
