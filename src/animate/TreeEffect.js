@@ -1,5 +1,5 @@
-import { Mouse } from "../Mouse";
-import { Root } from "../Partical";
+import { Mouse } from "../model/Mouse";
+import { Root } from "../model/Partical";
 import { getRandomRgb } from "../helper";
 export class TreeEffect {
   constructor({ ctx, edge = 80 }) {
