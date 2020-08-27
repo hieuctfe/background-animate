@@ -1,6 +1,6 @@
 import { Partial, Root } from "./Partical";
 import { loadImage, getRandomRgb } from "./helper";
-import { Animate } from "./Animate";
+import { Animate } from "./animate";
 
 ////////////////////////////////
 const width = window.innerWidth;

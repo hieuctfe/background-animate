@@ -9,7 +9,6 @@ export class TreeEffect {
     this.init();
   }
   init() {
-    console.log('init')
     const mouse = new Mouse().listenMouseMouveEvent(
       this.onMouseMove.bind(this)
     );

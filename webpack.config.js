@@ -19,4 +19,10 @@ module.exports = {
       template: path.resolve(__dirname, "index.html"),
     }),
   ],
+  devServer: {
+    port: 8080,
+    contentBase: ["./src", "./public"], // both src and output dirs
+    inline: true,
+    hot: true,
+  },
 };

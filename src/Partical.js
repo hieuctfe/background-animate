@@ -47,7 +47,7 @@ export class Root {
     rootX = 0,
     rootY = 0,
     distance = 80,
-    ctx, 
+    ctx,
     alpha = 1,
     rotate,
   }) {
