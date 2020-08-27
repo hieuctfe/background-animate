@@ -47,7 +47,7 @@ export class Root {
     rootX = 0,
     rootY = 0,
     distance = 80,
-    ctx,
+    ctx, 
     alpha = 1,
     rotate,
   }) {
@@ -71,10 +71,10 @@ export class Root {
         this.ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
       } else if (this.rgba) {
         const { r, g, b, a } = this.rgba;
-        this.ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${Math.random()})`;
+        this.ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${a || Math.random()})`;
         this.ctx.beginPath();
         this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-        this.ctx.strokeWidth = 1;
+        this.ctx.strokeWidth = 0.2;
         this.ctx.fill();
         this.ctx.stroke();
       }
